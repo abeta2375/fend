@@ -1,0 +1,11 @@
+.custom-navbar {
+    background-color: rgb(134, 77, 77); /* Purple color */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 25px; /* Adjust the value as needed for spacing */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}

@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <a class="navbar-brand" href="/">Customer Transactions</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/addCustomer" routerLinkActive="active">Add Customer</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/getAllCustomer" routerLinkActive="active">All Customers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/updateCustomer" routerLinkActive="active">Update Customer</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/getSingleCustomer" routerLinkActive="active">Get Single Customer</a>
+          </li>
+
+          <!-- <li class="nav-item">
+              <a class="nav-link" routerLink="/addTransaction" routerLinkActive="active">Add Trans</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/getAllTransaction" routerLinkActive="active">All Trans</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/getTransactionsByCustomerId" routerLinkActive="active">Trans by Cust ID</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/totalSum" routerLinkActive="active">Monthly Total</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/allDebitTransaction" routerLinkActive="active">ShowAllDebitTransaction</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/comapreTransaction" routerLinkActive="active">CompareTran</a>
+          </li> -->
+      </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

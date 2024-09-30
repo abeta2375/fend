@@ -1,0 +1,20 @@
+<h2 class="text-center">Customer Records</h2>
+
+<div class="col-md-8 offset-md-3">
+<table height="400" width="400" border=2 class="table table-striped table-centre">
+    <tr>
+        <th>Customer Code</th>
+        <th>Customer Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let c of clist">
+        <td> {{c.customerCode}} </td>
+        <td> {{c.customerName}} </td>
+        <td> {{c.address}} </td>
+        <td> {{c.mobile}} </td>
+        <td><button (click)="deleteCustomer(c.customerCode)">Delete</button></td>
+    </tr>
+</table>
+</div>

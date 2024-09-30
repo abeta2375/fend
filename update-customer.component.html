@@ -1,0 +1,23 @@
+<p>update-customer works!</p>
+
+<h2>Update Customer</h2>
+<form (ngSubmit)="onSubmit()" #customerForm="ngForm">
+  
+  <div>
+    <label for="customerName">Customer Name:</label>
+    <input [(ngModel)]="customer.customerName" name="customerName" required />
+  </div>
+  <div>
+    <label for="address">Address:</label>
+    <input [(ngModel)]="customer.address" name="address" required />
+  </div>
+  <div>
+    <label for="mobile">Mobile:</label>
+    <input [(ngModel)]="customer.mobile" name="mobile" required />
+  </div>
+  <button type="submit">Update Customer</button>
+</form>
+
+<div *ngIf="submitted" style="color: green;">
+  Customer updated successfully!
+</div>
